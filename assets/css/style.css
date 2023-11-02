@@ -1,0 +1,116 @@
+:root {
+    --header-size: 80px;
+    --main-size: calc(100vh - var(--header-size));
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+    font-family: Helvetica;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: var(--header-size);
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#header h1 {
+    color: #666666;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: var(--main-size);
+    margin: 0 auto;
+    padding: 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 32px;
+    gap: 16px;
+}
+
+.card-title {}
+
+.card-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background: #eeeeee;
+}
+
+.card-table tbody tr td {
+    flex: 1;
+    height: 45px;
+    padding-left: 16px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    color: #333333;
+}
+
+.table-actions {
+    width: 120px;
+    text-align: center;
+}
+
+.table-btn {
+    background: #f2f2f2;
+    padding: 3px 6px;
+    font-size: 12px;
+    color: #666666;
+    font-weight: bold;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tips {
+    position: absolute;
+    width: 200px;
+    padding: 16px;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    border: 2px solid rgb(104, 225, 255);
+    color: rgb(55, 159, 185);
+}

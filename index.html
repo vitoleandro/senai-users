@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1>Users List</h1>
+    </header>
+    <main id="main">
+        <section class="card">
+            <h2 class="card-title">Lista de Usuários</h2>
+            <table class="card-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Usuário</th>
+                        <th>Email</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="js-user-line"></tbody>
+            </table>
+
+            <section class="user-form">
+                <div class="row">
+                    <div class="col">
+                        <label for="">Nome</label>
+                        <input type="text" name="nome" class="js-user-name">
+                    </div>
+                    <div class="col">
+                        <label for="">Usuário</label>
+                        <input type="text" name="username" class="js-user-username">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="tips"></div>
+    </main>
+    <script src="assets/js/app2.js"></script>
+</body>
+
+</html>
